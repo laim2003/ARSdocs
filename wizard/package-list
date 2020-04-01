@@ -1,0 +1,8 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.wizard.di
+com.friday.ar.wizard.ui
+com.friday.ar.wizard.ui.fragments
+com.friday.ar.wizard.ui.fragments.deviceCompatibility
+com.friday.ar.wizard.ui.fragments.unlocker

@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Constant.getPluginDir - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.core</a>&nbsp;/&nbsp;<a href="index.html">Constant</a>&nbsp;/&nbsp;<a href="./get-plugin-dir.html">getPluginDir</a><br/>
+<br/>
+<h1>getPluginDir</h1>
+<a name="com.friday.ar.core.Constant.Companion$getPluginDir(android.content.Context)"></a>
+<code><span class="keyword">fun </span><span class="identifier">getPluginDir</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.core.Constant.Companion$getPluginDir(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a></code>
+<p>get the plugin storage directory.</p>
+<h3>Parameters</h3>
+<p><a name="context"></a>
+<code>context</code> - application context</p>
+<p><strong>Return</strong><br/>
+returns the cache directory to temporarily store zipped plugins.</p>
+<a name="com.friday.ar.core.Constant.Companion$getPluginDir(android.content.Context, kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">getPluginDir</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.core.Constant.Companion$getPluginDir(android.content.Context, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.core.Constant.Companion$getPluginDir(android.content.Context, kotlin.String)/child">child</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a></code>
+<p>get the plugin storage directory with children path.</p>
+<h3>Parameters</h3>
+<p><a name="context"></a>
+<code>context</code> - application context</p>
+<p><a name="child"></a>
+<code>child</code> - child directory to return(if does not exist, it will be created)</p>
+<p><strong>Return</strong><br/>
+returns a specified child directory of the applications plugin storage directory(<a href="#">.getPluginDir</a>).</p>
+</BODY>
+</HTML>

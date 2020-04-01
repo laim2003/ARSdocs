@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.core_ui.di
+com.friday.ar.core_ui.dialog
+com.friday.ar.core_ui.recyclerview.layoutmanager

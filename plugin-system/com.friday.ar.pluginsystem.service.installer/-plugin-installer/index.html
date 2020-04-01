@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PluginInstaller - pluginSystem</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pluginSystem</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.pluginsystem.service.installer</a>&nbsp;/&nbsp;<a href="./index.html">PluginInstaller</a><br/>
+<br/>
+<h1>PluginInstaller</h1>
+<code><span class="keyword">class </span><span class="identifier">PluginInstaller</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">KoinComponent</span></code>
+<p>This class is used to install plugins.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="is-silent.html">isSilent</a></p>
+</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-on-installation-state-changed-listener/index.html">OnInstallationStateChangedListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnInstallationStateChangedListener</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>This class is used to install plugins.</p>
+<code><span class="identifier">PluginInstaller</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.service.installer.PluginInstaller$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="is-silent.html">isSilent</a></h4>
+</td>
+<td>
+<p>Determines whether the installation service will show a notification or not. Is false by default.</p>
+<code><span class="keyword">var </span><span class="identifier">isSilent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-on-installation-progress-changed-listener.html">addOnInstallationProgressChangedListener</a></h4>
+</td>
+<td>
+<p>register a custom <a href="-on-installation-state-changed-listener/index.html">OnInstallationStateChangedListener</a> callback</p>
+<code><span class="keyword">fun </span><span class="identifier">addOnInstallationProgressChangedListener</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.service.installer.PluginInstaller$addOnInstallationProgressChangedListener(com.friday.ar.pluginsystem.service.installer.PluginInstaller.OnInstallationStateChangedListener)/onInstallationStateChangedListener">onInstallationStateChangedListener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnInstallationStateChangedListener</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="install-from.html">installFrom</a></h4>
+</td>
+<td>
+<p>Install a archived pluginfile (<a href="../../com.friday.ar.pluginsystem.file/-zipped-plugin-file/index.html">ZippedPluginFile</a>)</p>
+<code><span class="keyword">fun </span><span class="identifier">installFrom</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.service.installer.PluginInstaller$installFrom(com.friday.ar.pluginsystem.file.ZippedPluginFile)/pluginDir">pluginDir</span><span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.pluginsystem.file/-zipped-plugin-file/index.html"><span class="identifier">ZippedPluginFile</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-on-installation-state-changed-listener.html">removeOnInstallationStateChangedListener</a></h4>
+</td>
+<td>
+<p>remove a custom, already added <a href="-on-installation-state-changed-listener/index.html">OnInstallationStateChangedListener</a> callback</p>
+<code><span class="keyword">fun </span><span class="identifier">removeOnInstallationStateChangedListener</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.service.installer.PluginInstaller$removeOnInstallationStateChangedListener(com.friday.ar.pluginsystem.service.installer.PluginInstaller.OnInstallationStateChangedListener)/onInstallationStateChangedListener">onInstallationStateChangedListener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnInstallationStateChangedListener</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="request-install-from-input-stream.html">requestInstallFromInputStream</a></h4>
+</td>
+<td>
+<p>request installation of a plugin from an <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html">InputStream</a></p>
+<code><span class="keyword">fun </span><span class="identifier">requestInstallFromInputStream</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.service.installer.PluginInstaller$requestInstallFromInputStream(java.io.InputStream)/inputStream">inputStream</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="uninstall-plugin.html">uninstallPlugin</a></h4>
+</td>
+<td>
+<p>Uninstall specific plugin</p>
+<code><span class="keyword">fun </span><span class="identifier">uninstallPlugin</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.service.installer.PluginInstaller$uninstallPlugin(com.friday.ar.pluginsystem.Plugin)/plugin">plugin</span><span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.pluginsystem/-plugin/index.html"><span class="identifier">Plugin</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

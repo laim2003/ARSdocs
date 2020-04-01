@@ -1,0 +1,9 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.base.di
+com.friday.ar.base.system
+com.friday.ar.base.system.environment
+com.friday.ar.base.system.plugin
+com.friday.ar.base.system.startup
+com.friday.ar.base.ui

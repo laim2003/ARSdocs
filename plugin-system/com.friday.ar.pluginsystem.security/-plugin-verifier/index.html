@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PluginVerifier - pluginSystem</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pluginSystem</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.pluginsystem.security</a>&nbsp;/&nbsp;<a href="./index.html">PluginVerifier</a><br/>
+<br/>
+<h1>PluginVerifier</h1>
+<code><span class="keyword">class </span><span class="identifier">PluginVerifier</span></code>
+<p>Use this class to verify any kind of possible <a href="../../com.friday.ar.pluginsystem.file/-plugin-file/index.html">PluginFile</a>
+This class checks the following cases:</p>
+<ul><li>The file contains a manifest.</li>
+
+<li>The manifest contains the required meta info</li>
+<li>The manifest contains the required application info</li>
+<li>The manifests meta info contains the following keys:<strong>applicationName</strong>, <strong>versionName</strong></li>
+<li>The manifests application info contains the following keys:<strong>class</strong></li>
+</ul>
+<p>Warning policy
+In case of missing and security relevant info, such as an identifier and/or name of the author of a plugin, a warning will be thrown.
+<strong>Plugins which are installed from the official Friday store are not allowed to have the required info missing and will be blocked from installing.</strong></p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-on-verification-complete-listener/index.html">OnVerificationCompleteListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnVerificationCompleteListener</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Use this class to verify any kind of possible <a href="../../com.friday.ar.pluginsystem.file/-plugin-file/index.html">PluginFile</a>
+This class checks the following cases:</p>
+<code><span class="identifier">PluginVerifier</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="set-on-verification-complete-listener.html">setOnVerificationCompleteListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setOnVerificationCompleteListener</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.security.PluginVerifier$setOnVerificationCompleteListener(com.friday.ar.pluginsystem.security.PluginVerifier.OnVerificationCompleteListener)/onVerificationCompleteListener">onVerificationCompleteListener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnVerificationCompleteListener</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="verify.html">verify</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">verify</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.security.PluginVerifier$verify(com.friday.ar.pluginsystem.file.PluginFile, kotlin.Boolean)/pluginFile">pluginFile</span><span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.pluginsystem.file/-plugin-file/index.html"><span class="identifier">PluginFile</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.pluginsystem.security.PluginVerifier$verify(com.friday.ar.pluginsystem.file.PluginFile, kotlin.Boolean)/deleteOnException">deleteOnException</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

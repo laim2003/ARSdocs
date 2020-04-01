@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BaseNotification - core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">core</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.core.util.notifications</a>&nbsp;/&nbsp;<a href="./index.html">BaseNotification</a><br/>
+<br/>
+<h1>BaseNotification</h1>
+<code><span class="keyword">class </span><span class="identifier">BaseNotification</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-i-base-notification/index.html"><span class="identifier">IBaseNotification</span></a><span class="symbol">, </span><span class="identifier">KoinComponent</span></code>
+<p>Helper class for creating basic notifications faster.</p>
+<h3>Parameters</h3>
+<p><a name="id"></a>
+<code>id</code> - id of the notification to send</p>
+<p><a name="channnelID"></a>
+<code>channnelID</code> - channelID of the notification to send</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Helper class for creating basic notifications faster.</p>
+<code><span class="identifier">BaseNotification</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$<init>(kotlin.Int, kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$<init>(kotlin.Int, kotlin.String)/channnelID">channnelID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="channnel-i-d.html">channnelID</a></h4>
+</td>
+<td>
+<p>channelID of the notification to send</p>
+<code><span class="keyword">val </span><span class="identifier">channnelID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="context.html">context</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">context</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="id.html">id</a></h4>
+</td>
+<td>
+<p>id of the notification to send</p>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="notification.html">notification</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">notification</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/app/Notification/Builder.html"><span class="identifier">Builder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="notification-manager.html">notificationManager</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">notificationManager</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/app/NotificationManager.html"><span class="identifier">NotificationManager</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="notify-now.html">notifyNow</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">notifyNow</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set.html">set</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$set(kotlin.String, kotlin.String, kotlin.Int)/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$set(kotlin.String, kotlin.String, kotlin.Int)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$set(kotlin.String, kotlin.String, kotlin.Int)/icon">icon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/app/Notification/Builder.html"><span class="identifier">Builder</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">set</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$set(kotlin.Int, kotlin.Int, kotlin.Int)/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$set(kotlin.Int, kotlin.Int, kotlin.Int)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.core.util.notifications.BaseNotification$set(kotlin.Int, kotlin.Int, kotlin.Int)/icon">icon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BaseNotification</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

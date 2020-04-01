@@ -1,0 +1,118 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BaseDashboardListItem - dashboard</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">dashboard</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.dashboard.internal.base</a>&nbsp;/&nbsp;<a href="./index.html">BaseDashboardListItem</a><br/>
+<br/>
+<h1>BaseDashboardListItem</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">BaseDashboardListItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><a href="../../com.friday.ar.dashboard/-base-dashboard-item/index.html"><span class="identifier">BaseDashboardItem</span></a></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-base-dashboard-item-view-holder/index.html">BaseDashboardItemViewHolder</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BaseDashboardItemViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><span class="identifier">KoinComponent</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">BaseDashboardListItem</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="plugin.html">plugin</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">plugin</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><span class="identifier">Plugin</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="dismiss.html">dismiss</a></h4>
+</td>
+<td>
+<p>dismiss this item; removes item from dashboard</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dismiss</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="invalidate-item-state.html">invalidateItemState</a></h4>
+</td>
+<td>
+<p>invalidate state of this item (refreshes item)</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">invalidateItemState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-create.html">onCreate</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.dashboard.internal.base.BaseDashboardListItem$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-create-item.html">onCreateItem</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreateItem</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-create-view.html">onCreateView</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.dashboard.internal.base.BaseDashboardListItem$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.dashboard.internal.base.BaseDashboardListItem$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.friday.ar.dashboard.internal.base.BaseDashboardListItem$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-load-fragment.html">onLoadFragment</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onLoadFragment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-request-data-refresh.html">onRequestDataRefresh</a></h4>
+</td>
+<td>
+<p>Called when user refreshes dashboard.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onRequestDataRefresh</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.dashboard.internal.base.BaseDashboardListItem$onRequestDataRefresh(com.friday.ar.dashboard.BaseDashboardItem)/newData">newData</span><span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.dashboard/-base-dashboard-item/index.html"><span class="identifier">BaseDashboardItem</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-instance.html">getInstance</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.dashboard.internal.base.BaseDashboardListItem.Companion$getInstance(com.friday.ar.pluginsystem.Plugin)/plugin">plugin</span><span class="symbol">:</span>&nbsp;<span class="identifier">Plugin</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">BaseDashboardListItem</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

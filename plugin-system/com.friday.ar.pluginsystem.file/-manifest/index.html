@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Manifest - pluginSystem</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">pluginSystem</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.pluginsystem.file</a>&nbsp;/&nbsp;<a href="./index.html">Manifest</a><br/>
+<br/>
+<h1>Manifest</h1>
+<code><span class="keyword">class </span><span class="identifier">Manifest</span></code>
+<p>Represents a <a href="../../com.friday.ar.pluginsystem/-plugin/index.html">Plugin</a>'s manifest.</p>
+<h3>Exceptions</h3>
+<p><a name="ManifestSecurityException"></a>
+<code>ManifestSecurityException</code> - </p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../com.friday.ar.pluginsystem/-plugin/index.html">Plugin</a></p>
+<p><a href="../-plugin-file/index.html">PluginFile</a></p>
+<p><a href="../-zipped-plugin-file/index.html">ZippedPluginFile</a></p>
+</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-application-info/index.html">ApplicationInfo</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ApplicationInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-meta-info/index.html">MetaInfo</a></h4>
+</td>
+<td>
+<p><a href="./index.html">Manifest</a> meta info</p>
+<code><span class="keyword">class </span><span class="identifier">MetaInfo</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Exceptions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-manifest-security-exception/index.html">ManifestSecurityException</a></h4>
+</td>
+<td>
+<p>Represents an exception thrown when a plugins' manifest is invalid causing security issues</p>
+<code><span class="keyword">class </span><span class="identifier">ManifestSecurityException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.pluginsystem.security/-verification-security-exception/index.html"><span class="identifier">VerificationSecurityException</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents a <a href="../../com.friday.ar.pluginsystem/-plugin/index.html">Plugin</a>'s manifest.</p>
+<code><span class="identifier">Manifest</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.pluginsystem.file.Manifest$<init>(com.friday.ar.pluginsystem.file.PluginFile, org.json.JSONObject)/sourceFile">sourceFile</span><span class="symbol">:</span>&nbsp;<a href="../-plugin-file/index.html"><span class="identifier">PluginFile</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.friday.ar.pluginsystem.file.Manifest$<init>(com.friday.ar.pluginsystem.file.PluginFile, org.json.JSONObject)/manifestJSON">manifestJSON</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="application-info.html">applicationInfo</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">applicationInfo</span><span class="symbol">: </span><span class="identifier">ApplicationInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="meta-info.html">metaInfo</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">metaInfo</span><span class="symbol">: </span><span class="identifier">MetaInfo</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="source-file.html">sourceFile</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">sourceFile</span><span class="symbol">: </span><a href="../-plugin-file/index.html"><span class="identifier">PluginFile</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-plugin.html">toPlugin</a></h4>
+</td>
+<td>
+<p>Converts a <a href="./index.html">Manifest</a> object to a <a href="../../com.friday.ar.pluginsystem/-plugin/index.html">Plugin</a> object.</p>
+<code><span class="keyword">fun </span><span class="identifier">toPlugin</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.friday.ar.pluginsystem/-plugin/index.html"><span class="identifier">Plugin</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

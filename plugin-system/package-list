@@ -1,0 +1,17 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.pluginsystem
+com.friday.ar.pluginsystem.cache
+com.friday.ar.pluginsystem.db
+com.friday.ar.pluginsystem.db.pluginIndex
+com.friday.ar.pluginsystem.db.sys.registry
+com.friday.ar.pluginsystem.di
+com.friday.ar.pluginsystem.file
+com.friday.ar.pluginsystem.launcher
+com.friday.ar.pluginsystem.logging
+com.friday.ar.pluginsystem.security
+com.friday.ar.pluginsystem.service
+com.friday.ar.pluginsystem.service.installer
+com.friday.ar.pluginsystem.sys.registry
+com.friday.ar.pluginsystem.util

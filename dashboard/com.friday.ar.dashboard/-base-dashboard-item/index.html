@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BaseDashboardItem - dashboard</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">dashboard</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.dashboard</a>&nbsp;/&nbsp;<a href="./index.html">BaseDashboardItem</a><br/>
+<br/>
+<h1>BaseDashboardItem</h1>
+<code><span class="keyword">interface </span><span class="identifier">BaseDashboardItem</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="dismiss.html">dismiss</a></h4>
+</td>
+<td>
+<p>dismiss this item; removes item from dashboard</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">dismiss</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="invalidate-item-state.html">invalidateItemState</a></h4>
+</td>
+<td>
+<p>invalidate state of this item (refreshes item)</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">invalidateItemState</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-create-item.html">onCreateItem</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onCreateItem</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-load-fragment.html">onLoadFragment</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onLoadFragment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-request-data-refresh.html">onRequestDataRefresh</a></h4>
+</td>
+<td>
+<p>Called when user refreshes dashboard.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onRequestDataRefresh</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.dashboard.BaseDashboardItem$onRequestDataRefresh(com.friday.ar.dashboard.BaseDashboardItem)/newData">newData</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">BaseDashboardItem</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.friday.ar.dashboard.internal.base/-base-dashboard-list-item/index.html">BaseDashboardListItem</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">BaseDashboardListItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Fragment</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">BaseDashboardItem</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

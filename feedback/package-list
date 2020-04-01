@@ -1,0 +1,5 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.feedback.di
+com.friday.ar.feedback.ui

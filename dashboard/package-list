@@ -1,0 +1,9 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.dashboard
+com.friday.ar.dashboard.di
+com.friday.ar.dashboard.internal.base
+com.friday.ar.dashboard.internal.item
+com.friday.ar.dashboard.list
+com.friday.ar.dashboard.ui.dashboardFragment

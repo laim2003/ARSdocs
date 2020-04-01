@@ -1,0 +1,14 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar
+com.friday.ar.activities
+com.friday.ar.di
+com.friday.ar.dialog
+com.friday.ar.fragments.dialogFragments
+com.friday.ar.fragments.dialogFragments.changelog
+com.friday.ar.fragments.profileFragment
+com.friday.ar.ui
+com.friday.ar.ui.mainactivity
+com.friday.ar.util
+com.friday.ar.util.list

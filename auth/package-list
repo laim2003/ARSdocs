@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.auth.di
+com.friday.ar.auth.fragments
+com.friday.ar.auth.interfaces

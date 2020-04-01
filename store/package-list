@@ -1,0 +1,15 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.store.data
+com.friday.ar.store.data.glide
+com.friday.ar.store.di
+com.friday.ar.store.dialog
+com.friday.ar.store.pager
+com.friday.ar.store.ui
+com.friday.ar.store.ui.adapter
+com.friday.ar.store.ui.fragments
+com.friday.ar.store.ui.fragments.feed.gridFragments
+com.friday.ar.store.ui.fragments.storeFeaturedFragment
+com.friday.ar.store.ui.packageInstaller
+com.friday.ar.store.ui.storeInstallationManagerActivity

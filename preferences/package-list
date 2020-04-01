@@ -1,0 +1,8 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.preferences.ui
+com.friday.ar.preferences.ui.di
+com.friday.ar.preferences.ui.dialog
+com.friday.ar.preferences.ui.fragments
+com.friday.ar.preferences.ui.preference

@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.account.data
+com.friday.ar.account.di
+com.friday.ar.account.sync

@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SignInFragmentViewModel - auth</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">auth</a>&nbsp;/&nbsp;<a href="../index.html">com.friday.ar.auth.fragments</a>&nbsp;/&nbsp;<a href="./index.html">SignInFragmentViewModel</a><br/>
+<br/>
+<h1>SignInFragmentViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">SignInFragmentViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">SignInFragmentViewModel</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="inputs-usability-state.html">inputsUsabilityState</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">inputsUsabilityState</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="new-user-cretion-task.html">newUserCretionTask</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">newUserCretionTask</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><span class="identifier">Task</span><span class="symbol">&lt;</span><span class="identifier">AuthResult</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-auth-completed-listener-list.html">onAuthCompletedListenerList</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">onAuthCompletedListenerList</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../../com.friday.ar.auth.interfaces/-on-auth-completed-listener/index.html"><span class="identifier">OnAuthCompletedListener</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-email-signin-completed.html">onEmailSigninCompleted</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">onEmailSigninCompleted</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><span class="identifier">Task</span><span class="symbol">&lt;</span><span class="identifier">AuthResult</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-google-sign-in-completed.html">onGoogleSignInCompleted</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">onGoogleSignInCompleted</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><span class="identifier">Task</span><span class="symbol">&lt;</span><span class="identifier">AuthResult</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-password-reset-completed.html">onPasswordResetCompleted</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">onPasswordResetCompleted</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><span class="identifier">Task</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-on-auth-completed-listener.html">addOnAuthCompletedListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addOnAuthCompletedListener</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$addOnAuthCompletedListener(com.friday.ar.auth.interfaces.OnAuthCompletedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.auth.interfaces/-on-auth-completed-listener/index.html"><span class="identifier">OnAuthCompletedListener</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create-user.html">createUser</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createUser</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$createUser(kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$createUser(kotlin.String, kotlin.String)/password">password</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="firebase-auth-with-google.html">firebaseAuthWithGoogle</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">firebaseAuthWithGoogle</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$firebaseAuthWithGoogle(com.google.android.gms.auth.api.signin.GoogleSignInAccount)/googleAccount">googleAccount</span><span class="symbol">:</span>&nbsp;<span class="identifier">GoogleSignInAccount</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-on-auth-completed-listener.html">removeOnAuthCompletedListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeOnAuthCompletedListener</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$removeOnAuthCompletedListener(com.friday.ar.auth.interfaces.OnAuthCompletedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.friday.ar.auth.interfaces/-on-auth-completed-listener/index.html"><span class="identifier">OnAuthCompletedListener</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reset-password.html">resetPassword</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetPassword</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$resetPassword(kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="signin-user-with-email-and-password.html">signinUserWithEmailAndPassword</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">signinUserWithEmailAndPassword</span><span class="symbol">(</span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$signinUserWithEmailAndPassword(kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.friday.ar.auth.fragments.SignInFragmentViewModel$signinUserWithEmailAndPassword(kotlin.String, kotlin.String)/password">password</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

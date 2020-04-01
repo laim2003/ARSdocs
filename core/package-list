@@ -1,0 +1,14 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.friday.ar.core
+com.friday.ar.core.activity
+com.friday.ar.core.di
+com.friday.ar.core.net
+com.friday.ar.core.util
+com.friday.ar.core.util.analitycs
+com.friday.ar.core.util.ar
+com.friday.ar.core.util.firebase
+com.friday.ar.core.util.net
+com.friday.ar.core.util.notifications
+com.friday.ar.core.util.validation
